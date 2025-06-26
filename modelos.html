@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelos - Night Rider</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -18,7 +19,6 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="modelos.html" class="active">Modelos</a></li>
-                <li><a href="personalizacao.html">Personalização</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="login.html" class="login-btn"><i class="fas fa-user"></i> Login</a></li>
@@ -28,102 +28,93 @@
 
     <main>
         <section class="catalogo">
-            <h2>Nossos Modelos</h2>
-            <div class="filtros">
-                <select id="categoria">
-                    <option value="todos">Todas as Categorias</option>
-                    <option value="custom">Custom</option>
-                    <option value="naked">Naked</option>
-                    <option value="esportiva">Esportiva</option>
-                </select>
-                <select id="preco">
-                    <option value="todos">Qualquer Preço</option>
-                    <option value="ate30">Até R$ 30.000</option>
-                    <option value="30a50">R$ 30.000 a 50.000</option>
-                    <option value="acima50">Acima de R$ 50.000</option>
-                </select>
-            </div>
             
             <div class="motos-container">
                 <!-- Moto 1 -->
                 <div class="moto-card" data-categoria="custom" data-preco="acima50">
-                    <img src="img/moto1.jpg" alt="Shadow Night">
-                    <h3>Shadow Night</h3>
+                    <img src="/assets/shadowphantom.jpg" alt="Shadow Night">
+                    <h3>Shadow Phantom</h3>
                     <div class="specs">
-                        <p><i class="fas fa-tachometer-alt"></i> 1200cc</p>
+                        <p><i class="fas fa-tachometer-alt"></i> 745cc</p>
                         <p><i class="fas fa-bolt"></i> 85 HP</p>
                     </div>
                     <p class="price">R$ 42.990</p>
                     <a href="#" class="btn">Detalhes</a>
                 </div>
                 
-                <!-- Moto 2 -->
                 <div class="moto-card" data-categoria="naked" data-preco="30a50">
-                    <img src="img/moto2.jpg" alt="Phantom R">
-                    <h3>Phantom R</h3>
+                    <img src="/assets/suzuki.jpg" alt="GSX-R1000R">
+                    <h3>GSX-R1000R</h3>
                     <div class="specs">
-                        <p><i class="fas fa-tachometer-alt"></i> 900cc</p>
+                        <p><i class="fas fa-tachometer-alt"></i> 1000cc</p>
                         <p><i class="fas fa-bolt"></i> 110 HP</p>
                     </div>
                     <p class="price">R$ 56.790</p>
                     <a href="#" class="btn">Detalhes</a>
                 </div>
                 
-                <!-- Moto 3 -->
                 <div class="moto-card" data-categoria="esportiva" data-preco="acima50">
-                    <img src="img/moto3.jpg" alt="Eclipse GT">
-                    <h3>Eclipse GT</h3>
+                    <img src="/assets/yamaha.jpg" alt="Virago 250">
+                    <h3>Virago 250</h3>
                     <div class="specs">
-                        <p><i class="fas fa-tachometer-alt"></i> 1000cc</p>
+                        <p><i class="fas fa-tachometer-alt"></i> 250cc</p>
                         <p><i class="fas fa-bolt"></i> 150 HP</p>
                     </div>
                     <p class="price">R$ 65.500</p>
                     <a href="#" class="btn">Detalhes</a>
                 </div>
                 
-                <!-- Moto 4 -->
                 <div class="moto-card" data-categoria="custom" data-preco="ate30">
-                    <img src="img/moto4.jpg" alt="Dark Rider">
-                    <h3>Dark Rider</h3>
+                    <img src="/assets/agusta.webp" alt="MV Agusta Brutale 1000 RS">
+                    <h3>Agusta Brutale</h3>
                     <div class="specs">
-                        <p><i class="fas fa-tachometer-alt"></i> 600cc</p>
+                        <p><i class="fas fa-tachometer-alt"></i> 1000cc</p>
                         <p><i class="fas fa-bolt"></i> 45 HP</p>
                     </div>
-                    <p class="price">R$ 28.990</p>
+                    <p class="price">R$ 48.990</p>
                     <a href="#" class="btn">Detalhes</a>
                 </div>
                 
-                <!-- Moto 5 -->
                 <div class="moto-card" data-categoria="naked" data-preco="30a50">
-                    <img src="img/moto5.jpg" alt="Stealth S">
-                    <h3>Stealth S</h3>
+                    <img src="/assets/cross.jpg" alt="15 KTM 350-SX-F">
+                    <h3>15 KTM 350-SX-F</h3>
                     <div class="specs">
-                        <p><i class="fas fa-tachometer-alt"></i> 750cc</p>
+                        <p><i class="fas fa-tachometer-alt"></i> 350cc</p>
                         <p><i class="fas fa-bolt"></i> 90 HP</p>
                     </div>
-                    <p class="price">R$ 38.500</p>
+                    <p class="price">R$ 28.500</p>
                     <a href="#" class="btn">Detalhes</a>
                 </div>
                 
-                <!-- Moto 6 -->
                 <div class="moto-card" data-categoria="esportiva" data-preco="acima50">
-                    <img src="img/moto6.jpg" alt="Viper X">
-                    <h3>Viper X</h3>
+                    <img src="/assets/bmw.png" alt="F 900 R BMW">
+                    <h3>F 900 R BMW</h3>
                     <div class="specs">
-                        <p><i class="fas fa-tachometer-alt"></i> 1300cc</p>
+                        <p><i class="fas fa-tachometer-alt"></i> 900cc</p>
                         <p><i class="fas fa-bolt"></i> 180 HP</p>
                     </div>
                     <p class="price">R$ 72.300</p>
                     <a href="#" class="btn">Detalhes</a>
                 </div>
+
+                <div class="moto-card" data-categoria="esportiva" data-preco="acima50">
+                    <img src="/assets/rocket.jpg" alt="TRIUMPH Storm-GT-2024">
+                    <h3>TRIUMPH Storm-GT</h3>
+                    <div class="specs">
+                        <p><i class="fas fa-tachometer-alt"></i> 1100cc</p>
+                        <p><i class="fas fa-bolt"></i> 135 HP</p>
+                    </div>
+                    <p class="price">R$ 65.900</p>
+                    <a href="#" class="btn">Detalhes</a>
+                </div>
             </div>
-        </section>
+        </section> 
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Night Drive</h3>
+                <h3>Night Rider</h3>
                 <p>Motos personalizadas para quem não segue o padrão.</p>
             </div>
             <div class="footer-section">
